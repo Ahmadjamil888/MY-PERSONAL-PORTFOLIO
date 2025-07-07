@@ -133,7 +133,7 @@ const About = () => {
             </div>
             <div className="p-4 border border-white/10 rounded-lg">
               <p className="text-white/80">
-                <span className="font-semibold">Personal Website:</span> DHAMIA
+                <span className="font-semibold">Personal Website:</span> MY-PORTFOLIO
               </p>
             </div>
             <div className="p-4 border border-white/10 rounded-lg">
