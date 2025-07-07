@@ -37,10 +37,10 @@ const Navbar = () => {
               Projects
             </Link>
             <Link 
-              to="/blogs" 
-              className={`transition-colors ${isActive('/blogs') ? 'text-white border-b border-white' : 'text-white/70 hover:text-white'} pb-1`}
+              to="/contact" 
+              className={`transition-colors ${isActive('/contact') ? 'text-white border-b border-white' : 'text-white/70 hover:text-white'} pb-1`}
             >
-              Blogs
+              Contact
             </Link>
           </div>
 

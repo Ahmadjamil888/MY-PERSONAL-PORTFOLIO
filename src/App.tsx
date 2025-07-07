@@ -6,9 +6,8 @@ import Navbar from '@/components/Navbar';
 import Home from '@/pages/Home';
 import About from '@/pages/About';
 import Projects from '@/pages/Projects';
-import Blogs from '@/pages/Blogs';
+import Contact from '@/pages/Contact';
 import Auth from '@/pages/Auth';
-import ProtectedRoute from '@/components/ProtectedRoute';
 
 function App() {
   return (
@@ -20,11 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/blogs" element={
-              <ProtectedRoute>
-                <Blogs />
-              </ProtectedRoute>
-            } />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/auth" element={<Auth />} />
           </Routes>
           <Toaster />
