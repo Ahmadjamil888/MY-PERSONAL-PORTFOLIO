@@ -9,10 +9,10 @@ const Home = () => {
       <section className="pt-20 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Ahmad Jamil
+            I build web applications and custom AI systems
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Software Developer & AI Researcher
+            Developing full stack web apps and AI models from scratch.
           </p>
           <div className="text-lg text-white/70 mb-12 max-w-2xl mx-auto">
             <p className="mb-4">
