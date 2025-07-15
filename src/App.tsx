@@ -11,10 +11,21 @@ import Auth from '@/pages/Auth';
 
 function App() {
   useEffect(() => {
+    // Inject chatbot config
+    const configScript = document.createElement('script');
+    configScript.innerHTML = `
+      window.chatbaseConfig = {
+        chatbotId: "YOUR_CHATBOT_ID"
+      };
+    `;
+    document.head.appendChild(configScript);
+
+    // Inject chatbot script
     const script = document.createElement('script');
-    script.src = 'https://example.com/chatbot.js'; // replace with your actual chatbot script URL
+    script.src = 'https://www.chatbase.co/embed.min.js';
     script.defer = true;
-    document.body.appendChild(script);
+    script.id = 'chatbase-script';
+    document.head.appendChild(script);
   }, []);
 
   return (
@@ -29,7 +40,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/auth" element={<Auth />} />
           </Routes>
-          <div id="chatbot-container" className="fixed bottom-4 right-4 z-50" />
           <Toaster />
         </div>
       </Router>
